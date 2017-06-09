@@ -1,0 +1,14 @@
+<h1>Mi súper granja</h1>
+<p>La granja tiene estos animales:</p>
+<ul>
+  <li *ngFor="let animal of animales">{{ animal.nombre }}</li>
+</ul>
+<p>Los animales hacen estos sonidos:</p>
+<ul>
+  <li *ngFor="let animal of animales">{{ animal.getSonido() }}</li>
+</ul>
+<p>El animal que hace el sonido más corto es: {{ getAnimalConSonidoMasCorto().nombre }}</p>
+<p>Los animales hacen estos sonidos al revés:</p>
+<ul>
+  <li *ngFor="let sonidoInvertido of getSonidosInvertidosOrdenados()">{{ sonidoInvertido }}</li>
+</ul>
